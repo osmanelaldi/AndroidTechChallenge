@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android Tech Challenge</string>
+    <string name="login_market_title">MARKETİM</string>
+    <string name="hint_username">Kullanıcı Adı</string>
+    <string name="hint_password">Şifre</string>
+    <string name="rememberMe">Beni Hatırla</string>
+    <string name="login">Giriş</string>
+    <string name="error_username">Lütfen kullanıcı adını doldurunuz.</string>
+    <string name="error_password">Lütfen şifre alanını doldurunuz.</string>
+    <string name="error_validation">Kullanıcı adı ya da şifre hatalı.</string>
+</resources>
