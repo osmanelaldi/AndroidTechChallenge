@@ -1,4 +1,4 @@
-package com.example.androidtechchallenge
+package com.example.androidtechchallenge.custom
 
 import android.content.Context
 import android.util.AttributeSet

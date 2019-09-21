@@ -1,4 +1,4 @@
-package com.example.androidtechchallenge
+package com.example.androidtechchallenge.app
 
 import android.app.Application
 

@@ -3,6 +3,7 @@ package com.example.androidtechchallenge
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidtechchallenge.app.UserManager
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

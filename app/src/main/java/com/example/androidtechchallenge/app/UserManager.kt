@@ -1,4 +1,4 @@
-package com.example.androidtechchallenge
+package com.example.androidtechchallenge.app
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
@@ -17,7 +17,10 @@ object UserManager {
 
 
     fun init(context: Context){
-        sharedPreferences = context.getSharedPreferences(NAME,MODE)
+        sharedPreferences = context.getSharedPreferences(
+            NAME,
+            MODE
+        )
         editor = sharedPreferences.edit()
     }
 

@@ -18,7 +18,7 @@
             android:textColor="@color/appThemeRed"
             android:text="@string/login_market_title"
     />
-    <com.example.androidtechchallenge.CustomTextInputLayout
+    <com.example.androidtechchallenge.custom.CustomTextInputLayout
             android:id="@+id/til_login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,8 +46,8 @@
                 android:drawablePadding="10dp"
 
         />
-    </com.example.androidtechchallenge.CustomTextInputLayout>
-    <com.example.androidtechchallenge.CustomTextInputLayout
+    </com.example.androidtechchallenge.custom.CustomTextInputLayout>
+    <com.example.androidtechchallenge.custom.CustomTextInputLayout
             android:id="@+id/til_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:drawableLeft="@drawable/ic_password"
                 android:drawablePadding="10dp"
         />
-    </com.example.androidtechchallenge.CustomTextInputLayout>
+    </com.example.androidtechchallenge.custom.CustomTextInputLayout>
 
 
     <Switch
