@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface IDataService {
 
-    @GET
+    @GET(" ")
     fun getOrders() : Call<OrdersResponse>
 }

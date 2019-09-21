@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun login(username: String, password: String, isRememberMe: Boolean) {
-        val intent = Intent(this@LoginActivity, Orders::class.java)
+        val intent = Intent(this@LoginActivity, OrdersActivity::class.java)
         if (!isRememberMe) {
             UserManager.submitUser(username, password)
             startActivity(intent)
@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
     }
     fun checkUserExist(){
-        val intent = Intent(this@LoginActivity, Orders::class.java)
+        val intent = Intent(this@LoginActivity, OrdersActivity::class.java)
         UserManager.getUser()?.let {
             startActivity(intent)
         }

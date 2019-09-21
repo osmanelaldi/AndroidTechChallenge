@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+    <TextView
+            android:id="@+id/tv_order_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="45sp"
+            tools:text="08"
+    />
+    <TextView
+            android:id="@+id/tv_order_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_day"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_order_day"
+            app:layout_constraintStart_toStartOf="@+id/tv_order_day"
+            app:layout_constraintEnd_toEndOf="@id/tv_order_day"
+            android:textSize="18sp"
+            tools:text="Ekim"
+    />
+    <View
+            android:id="@+id/view_line"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/tv_order_day"
+            app:layout_constraintTop_toTopOf="@+id/tv_order_marketName"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_order_state"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/loginPageGray"
+           />
+    <TextView
+            android:id="@+id/tv_order_marketName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_order_day"
+            app:layout_constraintStart_toEndOf="@id/view_line"
+            app:layout_constraintBottom_toTopOf="@+id/tv_order_month"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Market 1"
+    />
+    <ImageView
+            android:id="@+id/iv_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_order_marketName"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_forward"
+    />
+    <TextView
+            android:id="@+id/tv_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_order_marketName"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_marketName"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            tools:text="Şampuan 250 ml"
+    />
+    <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_order_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="25 TL"
+    />
+    
+    <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_order_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_name"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_rounded_square"
+            android:drawablePadding="18dp"
+            tools:text="Hazırlanıyor"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
