@@ -15,7 +15,9 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="10dp"
             android:layout_marginStart="15dp"
-            android:textSize="45sp"
+            android:textSize="40sp"
+            android:textColor="@color/black_light"
+            android:textStyle="bold"
             tools:text="08"
     />
     <TextView
@@ -27,6 +29,7 @@
             app:layout_constraintStart_toStartOf="@+id/tv_order_day"
             app:layout_constraintEnd_toEndOf="@id/tv_order_day"
             android:textSize="18sp"
+            android:textColor="@color/black_light"
             tools:text="Ekim"
     />
     <View
@@ -50,7 +53,8 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_order_month"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="15dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
             android:textStyle="bold"
             tools:text="Market 1"
     />
@@ -69,8 +73,9 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/tv_order_marketName"
             app:layout_constraintTop_toBottomOf="@id/tv_order_marketName"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
             tools:text="Şampuan 250 ml"
     />
     <TextView
@@ -80,8 +85,9 @@
             app:layout_constraintTop_toTopOf="@id/tv_order_name"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="10dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="@color/black_light"
             tools:text="25 TL"
     />
     
@@ -91,11 +97,34 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/tv_order_name"
             app:layout_constraintTop_toBottomOf="@id/tv_order_name"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
             android:drawableStart="@drawable/ic_rounded_square"
             android:drawablePadding="18dp"
+            android:textColor="@color/black_light"
             tools:text="Hazırlanıyor"
     />
-
+    <TextView
+            android:id="@+id/tv_order_product_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_order_state"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_state"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            tools:text="Sıvı Sabun 250 ml"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/tv_order_product_detailPrice"/>
+    <TextView
+            android:id="@+id/tv_order_product_detailPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_order_product_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_order_product_detail"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            tools:text="25 TL"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
