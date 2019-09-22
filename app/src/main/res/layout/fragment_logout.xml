@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_logout_fragment"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+    <TextView
+            android:id="@+id/tv_logout_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black_light"
+            android:text="@string/logout_message"/>
+    <Button
+            android:id="@+id/btn_logout_fragment_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_logout_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_logout_fragment_confirm"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_order_button"
+            android:textStyle="bold"
+            android:textColor="@color/appThemeRed"
+            android:text="@string/quit_cancel"/>
+    <Button
+            android:id="@+id/btn_logout_fragment_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/btn_logout_fragment_cancel"
+            app:layout_constraintStart_toEndOf="@id/btn_logout_fragment_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_login_button"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/logout_yes"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

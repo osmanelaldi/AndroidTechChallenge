@@ -8,7 +8,7 @@ import androidx.annotation.Nullable
 
 class CustomTextInputLayout(context: Context, attrs: AttributeSet) : TextInputLayout(context, attrs) {
 
-
+    // EditText'in background değerini korumak için clear işlemleri
     override fun setError(@Nullable error: CharSequence?) {
         super.setError(error)
         try {
