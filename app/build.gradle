@@ -29,10 +29,15 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
+
+    // User nesnesi ile json dönüşümü için kullandım
     implementation 'com.google.code.gson:gson:2.8.5'
+    // Api den gelen verileri ekrana çıkarmak için kullandım.
     implementation 'androidx.recyclerview:recyclerview:1.1.0-beta04'
+    // Api ile request atmak için kullandığım kütüphaneler.
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+
     //testİmplementation 'junit:junit:4.12'
     //androidTestİmplementation 'androidx.test:runner:1.2.0'
     //androidTestİmplementation 'androidx.test.espresso:espresso-core:3.2.0'
