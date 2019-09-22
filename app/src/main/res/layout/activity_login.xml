@@ -67,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_login_edittext"
                 android:singleLine="true"
+                android:inputType="textPassword"
                 android:textColor="@color/black"
                 android:textColorHint="@color/loginPageGray"
                 android:textSize="16sp"
